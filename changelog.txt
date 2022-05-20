@@ -1,0 +1,21 @@
+changing masktheface code to create binary masks of the mask
+# example command
+    python mask_the_face.py --path 'data/celeba_hq_256/10k' --mask_type 'surgical' --verbose 
+
+recreated dataset to include binary mask
+preformed postprocessing to convert any grey or non 255 pixels to 255, as it causes issues with outline creates--4 april
+Epoch: 29, MAE: 0.0019164204527305734, bestMAE: 0.001909936344395926, bestEpoch: 25.
+
+mistake made, trained at incorrect resolution. may have to retrain the model. 352 upsampled?
+pipeline for masked image is created, however it will need to be converted to 255 or 0, rather than greyscale
+
+
+256,256 image to 256,256,3
+frontend
+gast version
+todo:
+invert color on masktheface, as dataset tinged blue
+remove white lines around mask
+
+
+tensorflow 1.14 uninstallled

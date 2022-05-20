@@ -1,0 +1,19 @@
+{
+  "name": "unmask",
+  "version": "1.0.0",
+  "description": "Unmask masked human faces.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Josh Mithoo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cropperjs": "^1.5.12",
+    "sharp": "^0.30.3"
+  }
+}
